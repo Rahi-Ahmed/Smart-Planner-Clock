@@ -16,38 +16,76 @@
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <Switch
-            android:id="@+id/switchRain"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rain" />
+            android:layout_marginTop="16dp"
+            android:text="Sounds"
+            android:textStyle="bold" />
 
-        <SeekBar
-            android:id="@+id/seekRain"
+        <LinearLayout
+            android:id="@+id/soundContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" />
 
-        <Switch
-            android:id="@+id/switchOcean"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ocean" />
+            android:layout_marginTop="20dp"
+            android:text="Sleep Timer"
+            android:textStyle="bold" />
 
-        <SeekBar
-            android:id="@+id/seekOcean"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTimer10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10 min" />
+
+            <Button
+                android:id="@+id/btnTimer30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="30 min" />
+
+            <Button
+                android:id="@+id/btnTimer60"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="60 min" />
+        </LinearLayout>
 
         <Button
-            android:id="@+id/btnTimer10"
+            android:id="@+id/btnTimerCustom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Set 10 min sleep timer" />
+            android:layout_marginTop="8dp"
+            android:text="Custom timer" />
+
+        <Button
+            android:id="@+id/btnCancelTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cancel timer" />
 
         <Button
             android:id="@+id/btnStopAll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Stop all sounds" />
 
         <TextView
@@ -56,6 +94,55 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:text="Timer: not set" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Presets"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPresetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Preset name" />
+
+        <Button
+            android:id="@+id/btnSavePreset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Save current preset" />
+
+        <Spinner
+            android:id="@+id/spinnerPresets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLoadPreset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Load preset" />
+
+            <Button
+                android:id="@+id/btnDeletePreset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Delete preset" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
