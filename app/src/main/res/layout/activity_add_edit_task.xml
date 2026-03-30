@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#F5F7FA">
+    android:background="?android:colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:text="Task Details"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="#222222"
+            android:textColor="?android:textColorPrimary"
             android:layout_marginBottom="20dp" />
 
         <TextView
@@ -29,7 +29,7 @@
             android:text="Title"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="#555555"
+            android:textColor="?android:textColorSecondary"
             android:layout_marginBottom="6dp" />
 
         <EditText
@@ -38,7 +38,8 @@
             android:layout_height="wrap_content"
             android:hint="Enter task title"
             android:textSize="16sp"
-            android:textColor="#222222"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorHint"
             android:padding="14dp"
             android:background="@android:drawable/edit_text"
             android:layout_marginBottom="16dp" />
@@ -49,7 +50,7 @@
             android:text="Description"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="#555555"
+            android:textColor="?android:textColorSecondary"
             android:layout_marginBottom="6dp" />
 
         <EditText
@@ -60,7 +61,8 @@
             android:minLines="4"
             android:gravity="top"
             android:textSize="16sp"
-            android:textColor="#222222"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorHint"
             android:padding="14dp"
             android:background="@android:drawable/edit_text"
             android:layout_marginBottom="16dp" />
@@ -71,7 +73,7 @@
             android:text="Date"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="#555555"
+            android:textColor="?android:textColorSecondary"
             android:layout_marginBottom="6dp" />
 
         <EditText
@@ -81,7 +83,8 @@
             android:focusable="false"
             android:hint="Select date"
             android:textSize="15sp"
-            android:textColor="#222222"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorHint"
             android:padding="14dp"
             android:background="@android:drawable/edit_text"
             android:layout_marginBottom="16dp" />
@@ -92,7 +95,7 @@
             android:text="Time"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="#555555"
+            android:textColor="?android:textColorSecondary"
             android:layout_marginBottom="6dp" />
 
         <EditText
@@ -102,7 +105,8 @@
             android:focusable="false"
             android:hint="Select time"
             android:textSize="15sp"
-            android:textColor="#222222"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorHint"
             android:padding="14dp"
             android:background="@android:drawable/edit_text"
             android:layout_marginBottom="18dp" />
@@ -113,7 +117,7 @@
             android:layout_height="wrap_content"
             android:text="Enable Alarm"
             android:textSize="15sp"
-            android:textColor="#333333"
+            android:textColor="?android:textColorPrimary"
             android:layout_marginBottom="24dp" />
 
         <Button
