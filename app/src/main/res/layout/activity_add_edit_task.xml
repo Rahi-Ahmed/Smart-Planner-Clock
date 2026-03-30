@@ -1,52 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="20dp">
 
+        <!-- Title -->
         <EditText
-            android:id="@+id/etTitle"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Title" />
+            android:hint="Task Title"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
 
+        <!-- Description -->
         <EditText
             android:id="@+id/etDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Description"
-            android:minLines="3" />
+            android:minLines="4"
+            android:gravity="top"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
 
+        <!-- Date -->
         <EditText
             android:id="@+id/etDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="false"
-            android:hint="Select date" />
+            android:hint="📅 Select date"
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
 
+        <!-- Time -->
         <EditText
             android:id="@+id/etTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="false"
-            android:hint="Select time" />
+            android:hint="⏰ Select time"
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Alarm -->
         <CheckBox
             android:id="@+id/cbAlarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enable alarm" />
+            android:text="Enable Alarm"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp" />
 
+        <!-- Save Button -->
         <Button
             android:id="@+id/btnSaveTask"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Save Task" />
+            android:layout_height="50dp"
+            android:text="Save Task"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#4A90E2"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 </ScrollView>
